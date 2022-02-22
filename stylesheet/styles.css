@@ -3,6 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(122, 173, 197, 0.555);
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.img2 {
+    width: 30px;
+    margin-bottom: 5px;
+}
+.name{
+    display: none;
+}
+.logo {
+    display: flex;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.nav-Links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    justify-content: center;
+    gap: 10px;
+}
+.infos{
+    display: none;
+}
+.nav-Links li {
+    list-style: none;
+    
+}
+.nav-Links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+.icon,
+.text {
+    vertical-align: middle;
+    display: inline-block;
+}
+.text{
+    margin-left: 4px;
+} 
+@media(max-width:630px){
+nav   {
+    flex-direction: column;
+    
+}
+.logo{
+  align-items: center;
+}
+.nav-Links{
+  flex-direction: column;
+   margin-bottom: 10px;
+}
+.img2{
+  display: none;
+}
+.infos{
+  display: contents;
+}
+.img1{
+ width: 30px;
+}
+
+}
 body{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
