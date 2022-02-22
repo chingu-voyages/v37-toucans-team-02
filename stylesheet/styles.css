@@ -1,0 +1,33 @@
+*{
+   
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container h2{
+    text-align: center;
+}
+.container1, .container2, .container3, .container4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: rgb(0, 200, 255) solid 3px;
+    background-color: whitesmoke;
+    height: 25vh;
+    margin-bottom: 10px;
+}
+
+.container li{
+    list-style: none;
+    margin: 10px;
+    padding-left: 10px;
+}
