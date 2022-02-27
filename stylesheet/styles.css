@@ -2,51 +2,47 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 90%;
+    width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: rgba(122, 173, 197, 0.555);
+    height: 60px;
+    background-color: #a6c8db;
     border-style: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.img2 {
-    width: 30px;
-    margin-bottom: 5px;
+.img1 {
+    width: 35px;
 }
-.name{
-    display: none;
-}
+
 .logo {
-    display: flex;
     font-size: 18px;
     font-family: 'Great Vibes', cursive;
+    color: #fff;
 }
 
 .nav-Links {
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
-.infos{
-    display: none;
-}
+
 .nav-Links li {
     list-style: none;
-    
 }
 .nav-Links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
+}
+.nav-Links a:hover{
+    text-decoration: underline;
 }
 .icon,
 .text {
@@ -54,28 +50,51 @@ nav {
     display: inline-block;
 }
 .text{
-    margin-left: 4px;
+    margin-left: 2px;
 } 
-@media(max-width:630px){
-nav   {
-    flex-direction: column;
-    
-}
-.logo{
-  align-items: center;
-}
-.nav-Links{
-  flex-direction: column;
-   margin-bottom: 10px;
-}
-.img2{
-  display: none;
-}
-.infos{
-  display: contents;
-}
-.img1{
- width: 30px;
+.cardSpan1 ,.cardSpan2, .cardSpan3{
+    display: inline;
+  
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
 }
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+@media screen and (max-width: 896px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .nav-Links {
+        position: absolute;
+        left: 0;
+        height: 92vh;
+        width: 30%;
+        top: 8vh;
+    }
+    .nav-Links li {
+       display: none;
+    }
+  
+    .burger {
+        display: block;
+    }
+    .logo {
+     text-align: center;
+    }
+}
+
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 69d4fed1ce6e7dc7b107f9511978d5c779f62944
