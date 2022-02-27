@@ -2,54 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gratitulendar</title>
     <link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
 
-        <div class="logo">
-            <h1>Gratitulendar</h1>
-        </div>
-        <ul class="nav-Links">
-            <li>
-                <span class="cardSpan1"> 
-                    <span class="icon"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="white" class="bi bi-house-heart" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207l-5-5-5 5V13.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7.207Zm-5-.225C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
-                          </svg>
-                    </span>
-                   <span class="text"><a href="#"> Home </a></span> 
-                </span>
-                </li> 
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Gratitulendar</h1>
+            </div>
+          
+            <ul class="nav-Links">
                 <li>
-                    <span class="cardSpan2"> 
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-calendar-plus" viewBox="0 0 16 16">
-                                <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
-                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    <span class="cardSpan"> 
+                        <span class="icon"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-house-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207l-5-5-5 5V13.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7.207Zm-5-.225C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
                               </svg>
                         </span>
-                       <span class="text"><a href="#"> Add Gratitudes </a></span> 
+                       <span class="text"><a href="#"> Home </a></span> 
                     </span>
-                    </li>
-                 <li>
-                        <span class="cardSpan3"> 
+                    </li> 
+                    <li>
+                        <span class="cardSpan"> 
                             <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-calendar-heart" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                                    <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                                   </svg>
                             </span>
-                           <span class="text"><a href="#"> Calendar </a></span> 
+                           <span class="text"><a href="#"> Add Gratitudes </a></span> 
                         </span>
                         </li>
+                     <li>
+                            <span class="cardSpan"> 
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-calendar-heart" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                                      </svg>
+                                </span>
+                               <span class="text"><a href="#"> Calendar </a></span> 
+                            </span>
+                            </li>
+    
+                <li class="infos">
+                    <a href="#">
+                        <img class="img1" src="image-avatar.png" style="vertical-align:middle" > 
+                     User Info
+                    </a>
+                    </li>
+                <li><a href="#"></a></li>   
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li> 
+                <li><a href="#"></a></li> 
+                <li><a href="#"></a></li> 
+                <li><a href="#"></a></li> 
+                <li><a href="#"></a></li> 
+                <li><a href="#"></a></li> 
+            </ul>
+            <div class="user">
+             <a href="#"> <img class="img2" src="image-avatar.png" style="vertical-align:middle" > 
+              
+             </a>
+             <span class="name"> Username </span> 
+        </div>
+        </nav>
+    </header>
 
     <main>
         <!-- Gratitudes -->
