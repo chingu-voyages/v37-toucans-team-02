@@ -71,13 +71,14 @@ nav {
 
 /*  */
 table {
-    border-collapse: collapse;
+    /* border: 1px solid black; */
     background: white;
     color: black;
 }
 
 th,
 td {
+    /* border: 1px solid black; */
     font-weight: bold;
 }
 
