@@ -46,6 +46,7 @@ nav {
 }
 .icon,
 .text {
+
     vertical-align: middle;
     display: inline-block;
 }
@@ -111,3 +112,52 @@ td {
      text-align: center;
     }
 }
+
+/* Gratitude */
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(122, 173, 197, 0.555) ;
+    max-width: 1100px;
+    gap: 30px;
+    width: 100%;
+    margin: 10px auto;
+    align-items: center;
+}
+
+ ul{
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: -40px;
+    font-size: 14px;
+}
+
+.container ul{
+    list-style: none;
+    float: left;
+    height: 200px;
+    background: rgb(185, 255, 198);
+    margin: 40px 30px 0px 40px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+.title{
+    width: 80%;
+    height: 40px;
+    line-height: 30px;
+    background: white;
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+
+
