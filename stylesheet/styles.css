@@ -1,163 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
+  background-image: linear-gradient(to right, #e1fcdd, #d9f1ff);
+  scroll-behavior: smooth;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    background-color: #a6c8db;
-    border-style: none;
-    border-radius: 0px 0px 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #a6c8db;
+  border-style: none;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .img1 {
-    width: 35px;
+  width: 35px;
 }
 
 .logo {
-    font-size: 18px;
-    font-family: 'Great Vibes', cursive;
-    color: #fff;
+  font-size: 18px;
+  font-family: "Great Vibes", cursive;
+  color: #fff;
 }
 
 .nav-Links {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-Links li {
-    list-style: none;
+  list-style: none;
 }
 .nav-Links a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
 }
-.nav-Links a:hover{
-    text-decoration: underline;
+.nav-Links a:hover {
+  text-decoration: underline;
 }
 .icon,
 .text {
-
-    vertical-align: middle;
-    display: inline-block;
+  vertical-align: middle;
+  display: inline-block;
 }
-.text{
-    margin-left: 2px;
-} 
-.cardSpan1 ,.cardSpan2, .cardSpan3{
-    display: inline;
-  
+.text {
+  margin-left: 2px;
+}
+.cardSpan1,
+.cardSpan2,
+.cardSpan3 {
+  display: inline;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
 }
 
 /*  */
 table {
-    /* border: 1px solid black; */
-    background: white;
-    color: black;
+  /* border: 1px solid black; */
+  background: white;
+  color: black;
 }
 
 th,
 td {
-    /* border: 1px solid black; */
-    font-weight: bold;
+  /* border: 1px solid black; */
+  font-weight: bold;
 }
-
 
 /*  */
 
-
-
 @media screen and (max-width: 896px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .nav-Links {
+    position: absolute;
+    left: 0;
+    height: 92vh;
+    width: 30%;
+    top: 8vh;
+  }
+  .nav-Links li {
+    display: none;
+  }
 
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .nav-Links {
-        position: absolute;
-        left: 0;
-        height: 92vh;
-        width: 30%;
-        top: 8vh;
-    }
-    .nav-Links li {
-       display: none;
-    }
-  
-    .burger {
-        display: block;
-    }
-    .logo {
-     text-align: center;
-    }
+  .burger {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+  }
 }
 
 /* Gratitude */
 
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: rgba(122, 173, 197, 0.555) ;
-    max-width: 1100px;
-    gap: 30px;
-    width: 100%;
-    margin: 10px auto;
-    align-items: center;
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  gap: 30px;
+  align-items: center;
+  margin: 0px auto;
+  padding: 20px 10px;
 }
 
- ul{
-    padding: 0px;
-    margin: 0px;
-    width: 80%;
+.card-container {
+  height: 300px;
+  opacity: 0.5;
+  border: 2px solid white;
+  box-shadow: #a6c8db;
+  display: flex;
+  flex-direction: column;
 }
 
-h2{
-    text-align: center;
-    margin-bottom: -40px;
-    font-size: 14px;
+.title {
+  background: white;
+  text-align: center;
+  font-size: 14px;
+  height: 100%;
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container ul{
-    list-style: none;
-    float: left;
-    height: 200px;
-    background: rgb(185, 255, 198);
-    margin: 40px 30px 0px 40px;
-    box-sizing: border-box;
-    border: 2px solid white;
+.card-container ul {
+  list-style: none;
+  background-color: #d9f1ff;
+  height: 100%;
+  flex-basis: 85%;
+  padding: 10px 20px;
+  overflow-y: auto;
 }
 
-.title{
-    width: 80%;
-    height: 40px;
-    line-height: 30px;
-    background: white;
-    align-items: center;
-    margin-left: 40px;
+/* Media Queries For Lists */
+
+@media screen and (max-width: 896px) {
+  .container {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
-
-
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
