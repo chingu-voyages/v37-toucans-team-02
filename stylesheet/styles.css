@@ -69,17 +69,20 @@ nav {
     margin: 5px;
 }
 
-/*  */
+/* calender table CSS */
 table {
-    /* border: 1px solid black; */
-    background: white;
-    color: black;
+        background: white;
+        color: black;
+        /* display: flex; */
+        align-items: center;
 }
 
 th,
 td {
     /* border: 1px solid black; */
-    font-weight: bold;
+        font-weight: bold;
+        /* display: flex; */
+        align-items: center;
 }
 
 
@@ -103,11 +106,19 @@ td {
     .nav-Links li {
        display: none;
     }
-  
-    .burger {
+      .burger {
         display: block;
     }
     .logo {
      text-align: center;
     }
+
+    /* responsive table CSS */
+
+    th, td {
+        padding:0px;
+        margin:0px;
+    }
+
+
 }
