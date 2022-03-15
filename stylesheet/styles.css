@@ -74,9 +74,7 @@ table {
         background: white;
         color: black;
         /* display: flex; */
-        align-items: center;
-
-        
+        align-items: center; 
 }
 
 th,
@@ -87,17 +85,25 @@ td {
         align-items: center;    
 }
 
-
 th {
       font-weight: bold;
       /* display: flex; */
       align-items: center;
       color: white; 
-      background: lightblue
-
+      background: lightblue;
 }
 
-/*  */
+.date_selected_yellow {
+    background-color:#effc7f ; 
+    border-radius: 50%;
+}
+
+.date_selected_green {
+    background-color:#00FF00; 
+    border-radius: 50%;
+}
+
+  /* calender table CSS */
 
 
 
@@ -129,5 +135,8 @@ th {
     th, td {
         padding:0px;
         margin:0px;
+
+    /* responsive table CSS */
+
     }
 }
