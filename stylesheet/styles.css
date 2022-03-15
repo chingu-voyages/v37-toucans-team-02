@@ -75,6 +75,8 @@ table {
         color: black;
         /* display: flex; */
         align-items: center;
+
+        
 }
 
 th,
@@ -82,9 +84,18 @@ td {
     /* border: 1px solid black; */
         font-weight: bold;
         /* display: flex; */
-        align-items: center;
+        align-items: center;    
 }
 
+
+th {
+      font-weight: bold;
+      /* display: flex; */
+      align-items: center;
+      color: white; 
+      background: lightblue
+
+}
 
 /*  */
 
