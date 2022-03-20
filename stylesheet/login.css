@@ -7,7 +7,7 @@
 }
 body{
     width: 100%;
-    background: linear-gradient(45deg, #80FFDB, #a1c1e7) no-repeat;
+    background: linear-gradient(45deg, #80FFDB, #a1c1e7) no-repeat
 }
 form input{
    display: flex;
@@ -23,7 +23,7 @@ form input{
     width: 250px;
     height: 40px;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding-left: 20px;
     color: rgb(80, 80, 80);
@@ -116,7 +116,7 @@ form input{
 .loginbut{
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
     cursor: pointer;
    
 }
