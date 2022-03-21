@@ -3,23 +3,27 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #ffffff;
 }
 body{
     width: 100%;
-    background: linear-gradient(45deg, #80FFDB, #a1c1e7) no-repeat;
+    background: linear-gradient(45deg, #80FFDB, #a1c1e7) no-repeat
 }
 form input{
    display: flex;
   
 }
-
+.log{
+    text-align: center;
+    color: #ffffff;
+}
 .email , .password{
     display: flex;
     justify-content: center;
     width: 250px;
     height: 40px;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding-left: 20px;
     color: rgb(80, 80, 80);
@@ -46,10 +50,12 @@ form input{
     width: 60px;
     height: 30px;
     margin-left: 30px;
-    background-color: #ffffff;
-    border-style: none;
     border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #6ca0a0;
+    border-style: none;
+  
+    margin-top: 5px;
+    cursor: pointer;
 }
 .container{
     display: flex;
@@ -76,14 +82,6 @@ form input{
 .Continue{
     text-align: center;
     font-size: 0.9rem;
-}
-.google {
-    width: 40px;
-    height: 40px;
-    border-style: none;
-    border-radius: 8px;
-    background-color: darkblue;
-
 }
  .guest{
     display: flex;
@@ -112,18 +110,20 @@ form input{
     text-align: center;
     cursor: pointer;
     background-color: #fbfcfd;
+    color: #000;
     margin-bottom: 15px;
 }  
 .loginbut{
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
     cursor: pointer;
+   
 }
 form {
     padding: 20px;
     border-style: none;
-    background-color: rgba(112, 110, 110, 0.151);
+    background-color: rgba(238, 238, 238, 0.397);
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -146,7 +146,7 @@ form {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color:#6ca0a0;
     cursor: pointer;
 }
 .link:hover{
