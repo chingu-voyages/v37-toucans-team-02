@@ -17,12 +17,14 @@ body {
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
     align-items: center;
     height: 60px;
     background-color: #a6c8db;
     border-style: none;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .img1 {
@@ -37,10 +39,11 @@ nav {
 
 .nav-Links {
     display: flex;
-    justify-content: space-around;
-    width: 60%;
     justify-content: center;
-    gap: 20px;
+    position: absolute;
+    right: 0;
+     left: 0; 
+    
 }
 
 .nav-Links li {
@@ -64,6 +67,7 @@ nav {
 } 
 .cardSpan1 ,.cardSpan2, .cardSpan3{
     display: inline;
+    margin: 10px;
   
 }
 
@@ -105,7 +109,7 @@ nav {
         left: 0;
         height: 100vh;
         width: 100%;
-        top: 9vh;
+        top: 8vh;
         background-color: #86bcdb;
         display: flex;
         flex-direction: column;
@@ -113,12 +117,13 @@ nav {
         transform: translateX(-100%);
         transition: transform 0.5s  ease-in;
         z-index: 9999;
-        padding-left: 20px;
+        padding-left: 20px;      
     }
     
     .nav-Links li {
         opacity: 0;
     }
+
     .burger {
         display: block;
     }
@@ -143,6 +148,7 @@ nav {
         
         to {
             opacity: 1;
+            margin-bottom: 20px;
             transform: translateX(0px);
         }
         }
@@ -160,6 +166,7 @@ nav {
         transform: rotate(45deg) translate(-5px, -6px);
         }
         }
+        
         
 /*  */
 main {
