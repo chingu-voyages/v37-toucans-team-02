@@ -83,10 +83,13 @@ nav {
 
     body {
         width: 100%;
-        height: 100vh;
-        overflow-x: hidden; 
+        height: 100%;
+        /* overflow: hidden;  */
        
     }
+    .lock-scroll {
+      overflow: hidden;
+  }
     /* .nav-Links {
         position: absolute;
         left: 0;
