@@ -162,17 +162,83 @@ nav {
         }
         
 /*  */
-table {
-  /* border: 1px solid black; */
-  background: white;
-  color: black;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
 }
+
+/* calender table CSS */
+
+
+
+
+.month-name {
+  color: rgb(59, 139, 166);
+  padding: 10px;
+
+}
+
+table {
+        /* display: flex; */
+        align-items: center; 
+        box-shadow: rgba(177, 216, 255, 0.415) 0px 8px 24px;
+        border-radius: 10px;
+        background-color: white;
+}
+
+
 
 th,
 td {
-  /* border: 1px solid black; */
-  font-weight: bold;
+    /* border: 1px solid black; */
+        width: 60px;
+        height: 60px;
+        
+        font-size: 20px;
+        /* display: flex; */
+        text-align: center;    
+    
+    
+        
+  
+        
+        border-radius: 10px;
+        color: rgb(59, 139, 166);
 }
+
+th {
+      font-weight: bold;
+      /* display: flex; */
+      align-items: center;
+      color: white; 
+      background: lightblue;
+}
+
+td {
+  font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.date_selected_yellow {
+    background-color:#f8ffbb ; 
+    border-radius: 50%;
+}
+
+.date_selected_green {
+    background-color:#deffde; 
+    border-radius: 50%;
+    
+}
+
+.not-actual-month {
+  border: none;
+  background: none;
+}
+
+  /* calender table CSS */
 /* Gratitude */
 
 .container {
@@ -225,6 +291,16 @@ td {
 @media screen and (max-width: 530px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  th {
+    border-radius: 3px;
+    
+  }
+
+  th, td {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
   }
 }
 
