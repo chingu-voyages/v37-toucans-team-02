@@ -36,16 +36,18 @@ nav {
 .profile-pic {
     width: 35px;
     height: 35px;
-  
+
 }
 .profile-pic , .logout-icon{
   display: inline-block;
   vertical-align:middle;
+
 }
 
 .logout-icon {
   margin-top: 5px;
 }
+
 
 .logo {
     font-size: 18px;
