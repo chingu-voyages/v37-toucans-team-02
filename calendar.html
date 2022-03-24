@@ -7,16 +7,15 @@
     <title>Gratitulendar</title>
     <link rel="stylesheet" href="stylesheet/styles.css">
 </head>
-<body>
 
-    <header>
+
+    <body class="body">
         <nav>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-    
             <div class="logo">
                 <h1>Gratitulendar</h1>
             </div>
@@ -57,12 +56,17 @@
     
                
                     </li>
-            </ul>
-          
-            <a href="#"><img class="profile-pic" alt="profile picture" src="assets/image-avatar.png" ></a>
-            
-        </nav>
-    </header>
+            </ul>  
+      <div>
+       <img  class="profile-pic" alt="profile picture"  src="assets/image-avatar.png" >
+            <a class="logout-icon" href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+            </a>
+    </div>
+        </nav> 
 
     <main>      
             <h2 class="month-name">
@@ -135,6 +139,20 @@
                 </tbody>
             </table>
     </main>
+    <!----  Modal for adding gratitude --->
+    <div class="add-gratitude-modal">
+        <div class="add-gratitude-modal-content">
+            <h2 class="form-header">Add gratitude</h2>
+            <span class="add-gratitude-modal-close-button">&times;</span>
+            <div class="form-container">
+                  <label>Date</label>
+                  <input class="gratitude-date" type="text" placeholder="DD/MM/YYYY"/>
+                  <label>I'm grateful for...</label>
+                  <textarea id="gratitude-text" name="story" rows="5" cols="33"></textarea>
+                  <button class="add-gratitude-button">Add</button>
+              </div>
+        </div>
+    </div>  
     <script src="src/script.js">
     </script>
 </body>
