@@ -14,6 +14,7 @@ Giving the nature of the tier-one technology which is html/css with basic javasc
 - Calendar page: View your gratitude list in a form of a calendar
 - Login page: Fill out the login page form
 - Signup page: Fill out the signup page form
+- The website is fully responsive
 
 ## Contributors
 
