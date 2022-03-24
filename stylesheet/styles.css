@@ -74,6 +74,7 @@ nav {
 .text {
     vertical-align: middle;
     display: inline-block;
+    font-weight: lighter;
 }
 .text{
     margin-left: 2px;
