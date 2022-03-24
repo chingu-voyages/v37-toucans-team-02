@@ -38,12 +38,12 @@ nav {
     height: 35px;
   
 }
-.profile-pic , .icon_svg{
+.profile-pic , .logout-icon{
   display: inline-block;
   vertical-align:middle;
 }
 
-.icon_svg {
+.logout-icon {
   margin-top: 5px;
 }
 
