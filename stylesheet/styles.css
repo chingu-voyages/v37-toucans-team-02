@@ -42,6 +42,11 @@ nav {
   display: inline-block;
   vertical-align:middle;
 }
+
+.icon_svg {
+  margin-top: 5px;
+}
+
 .logo {
     font-size: 18px;
     font-family: 'Great Vibes', cursive;
