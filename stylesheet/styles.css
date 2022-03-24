@@ -14,6 +14,8 @@ body {
     scroll-behavior:smooth;
 }
 
+/* ------------------ Navigation ------------------ */
+
 nav {
     width: 100%;
     display: flex;
@@ -25,6 +27,7 @@ nav {
     background-color: #a6c8db;
     border-style: none;
     border-radius: 0px 0px 0px 0px;
+    
 }
 
 .profile-pic {
@@ -49,12 +52,14 @@ nav {
 
 .nav-Links li {
     list-style: none;
+    
 }
 .nav-Links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
 }
+
 .nav-Links a:hover{
     text-decoration: underline;
 }
@@ -84,92 +89,8 @@ nav {
     margin: 5px;
 }
 
-@media screen and (max-width: 896px) {
+/* ------------------ Calendar ------------------ */
 
-    body {
-        width: 100%;
-        height: 100%;
-        /* overflow: hidden;  */
-       
-    }
-    .lock-scroll {
-      overflow: hidden;
-  }
-    /* .nav-Links {
-        position: absolute;
-        left: 0;
-        height: 92vh;
-        width: 30%;
-        top: 8vh;
-    }
-    .nav-Links li {
-       display: none;
-    } */
-    .nav-Links {
-        position: absolute;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        top: 8vh;
-        background-color: #86bcdb;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        transform: translateX(-100%);
-        transition: transform 0.5s  ease-in;
-        z-index: 9999;
-        padding-left: 20px;      
-    }
-    
-    .nav-Links li {
-        opacity: 0;
-    }
-
-    .burger {
-        display: block;
-    }
-    .logo {
-     text-align: center;
-    }
-    .nav-active {
-        transform: translateX(0);
-        }
-        .container {
-          max-width: 100%;
-          grid-template-columns: repeat(2, 1fr);
-        }
-        
-        
-        @keyframes navLinkFade {
-        
-        from {
-            opacity: 0;
-            transform: translateX(50px)
-        }
-        
-        to {
-            opacity: 1;
-            margin-bottom: 20px;
-            transform: translateX(0px);
-        }
-        }
-        
-        .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-        
-        }
-        
-        .toggle .line2 {
-        opacity: 0;
-        }
-        
-        .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-        }
-        }
-        
-        
-/*  */
 main {
   display: flex;
   flex-direction: column;
@@ -178,11 +99,6 @@ main {
   padding-bottom: 30px;
 }
 
-/* calender table CSS */
-
-
-
-
 .month-name {
   color: rgb(59, 139, 166);
   padding: 10px;
@@ -190,7 +106,6 @@ main {
 }
 
 table {
-        /* display: flex; */
         align-items: center; 
         box-shadow: rgba(177, 216, 255, 0.415) 0px 8px 24px;
         border-radius: 10px;
@@ -201,25 +116,16 @@ table {
 
 th,
 td {
-    /* border: 1px solid black; */
         width: 60px;
-        height: 60px;
-        
+        height: 60px;  
         font-size: 20px;
-        /* display: flex; */
         text-align: center;    
-    
-    
-        
-  
-        
         border-radius: 10px;
         color: rgb(59, 139, 166);
 }
 
 th {
       font-weight: bold;
-      /* display: flex; */
       align-items: center;
       color: white; 
       background: lightblue;
@@ -246,8 +152,7 @@ td {
   background: none;
 }
 
-  /* calender table CSS */
-/* Gratitude */
+/* ------------------ List ------------------ */
 
 .container {
   width: 100%;
@@ -289,13 +194,190 @@ td {
   overflow-y: auto;
 }
 
-/* Media Queries For Lists */
+/* ------------------ Modal ------------------ */
+
+button, button:focus{
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+  
+button:active{
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.add-gratitude-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    color: #22668e;
+}
+
+.add-gratitude-modal-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1rem;
+    width: 24rem;
+    border-radius: 0.25rem;
+}
+
+.add-gratitude-modal-close-button {
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: #6ebbe6;
+    color: white;
+}
+
+.add-gratitude-modal-close-button:hover {
+  background-color: #4e9fcf;
+}
+
+.show-modal {
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} 
+
+.form-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input, textarea {
+  border-radius:5px;
+  border: 1px solid rgb(229, 229, 229);
+  margin-bottom: 10px;
+}
+
+.gratitude-date {
+  width: 90px;
+}
+
+#gratitude-text {
+  resize: none;
+  padding: 5px;
+}
+
+.add-gratitude-button {
+  border-radius: 5px;
+  background-color: #6ebbe6;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  border:1px solid #bbe6ff;
+  cursor: pointer;
+}
+
+.add-gratitude-button:hover {
+  background-color: #4e9fcf;
+}
+
+/* ------------------ Media Queries ------------------ */
 
 @media screen and (max-width: 900px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media screen and (max-width: 896px) {
+
+  body {
+      width: 100%;
+      height: 100%;   
+  }
+  .lock-scroll {
+    overflow: hidden;
+}
+
+  .nav-Links {
+      position: absolute;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      top: 8vh;
+      background-color: #86bcdb;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      transform: translateX(-100%);
+      transition: transform 0.5s  ease-in;
+      z-index: 999;
+      padding-left: 20px;      
+  }
+  
+  .nav-Links li {
+      opacity: 0;
+  }
+
+  .burger {
+      display: block;
+  }
+  .logo {
+   text-align: center;
+  }
+  .nav-active {
+      transform: translateX(0);
+      }
+      .container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      
+      @keyframes navLinkFade {
+      
+      from {
+          opacity: 0;
+          transform: translateX(50px)
+      }
+      
+      to {
+          opacity: 1;
+          margin-bottom: 20px;
+          transform: translateX(0px);
+      }
+      }
+      
+      .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+      
+      }
+      
+      .toggle .line2 {
+      opacity: 0;
+      }
+      
+      .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+      }
+}
+
 @media screen and (max-width: 530px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -309,6 +391,14 @@ td {
     width: 35px;
     height: 35px;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .add-gratitude-modal-content {
+
+    width: 20rem;
+
   }
 }
 

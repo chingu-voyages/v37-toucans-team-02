@@ -1,3 +1,5 @@
+
+
 const navSlide = () => {
     const body = document.querySelector('body');
      const burger = document.querySelector('.burger');
@@ -20,9 +22,26 @@ const navSlide = () => {
         });
         
         burger.classList.toggle('toggle');
-    });
+    }); 
+}
+navSlide();
 
-    
+
+const modal = document.querySelector(".add-gratitude-modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".add-gratitude-modal-close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
 }
 
-navSlide();
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick); 
+
