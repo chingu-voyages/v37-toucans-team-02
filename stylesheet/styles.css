@@ -27,12 +27,13 @@ nav {
     background-color: #a6c8db;
     border-style: none;
     border-radius: 0px 0px 0px 0px;
-    
+ 
 }
 
 .profile-pic {
     width: 35px;
     height: 35px;
+  
 }
 
 .logo {
@@ -46,7 +47,7 @@ nav {
     justify-content: center;
     position: absolute;
     right: 0;
-     left: 0; 
+    left: 0; 
     
 }
 
@@ -88,6 +89,7 @@ nav {
     background-color: rgb(255, 255, 255);
     margin: 5px;
 }
+
 
 /* ------------------ Calendar ------------------ */
 

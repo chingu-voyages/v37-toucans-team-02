@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     color: #ffffff;
 }
 body{
@@ -11,13 +11,23 @@ body{
 }
 form input{
    display: flex;
+
   
+}
+.logo{
+    font-family: 'Great Vibes', cursive;  
+     margin: 20px;
+     font-size :30px;
 }
 .log{
     text-align: center;
     color: #ffffff;
 }
+.email , .password,.remember , .hr-sect , .GUEST_0, .GUEST_1, .log , .signup{
+    font-family: 'poppins', sans-serif;
+}
 .email , .password{
+
     display: flex;
     justify-content: center;
     width: 250px;

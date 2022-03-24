@@ -7,9 +7,16 @@
 html{
     background: linear-gradient(45deg, #80FFDB, #a1c1e7) no-repeat
 }
+.logo1{
+    color: white;
+   font-family: 'Great vibes', cursive ;
+   font-size: 30px;
+   margin: 20px;
+}
 .logo{
     color: white;
-   font-size: 25px;
+   font-size: 25px;  
+
 }
 .container1{
 display: flex;
